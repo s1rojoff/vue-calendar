@@ -23,7 +23,7 @@ function alertDay():any{
 storeToRefs(store);
 </script>
 <template>
-  <div class="border bg-slate-50 w-1/2 mx-auto p-4 mt-5 h-auto">
+  <div class="border bg-slate-50 w-full xl:w-1/2 mx-auto p-4 mt-5 h-auto">
     <div class="flex justify-center">
       <div class="flex items-center gap-3">
         <BaseIcon
@@ -41,7 +41,7 @@ storeToRefs(store);
         />
       </div>
     </div>
-    <div class="flex gap-10 px-5 mt-5 w-full">
+    <div class="flex gap-10 xl:px-5 mt-5 w-full">
       <div class="w-1/2">
         <p>дд</p>
         <select
@@ -79,9 +79,9 @@ storeToRefs(store);
     </div>
 
     <!-- CONTENT -->
-    <div class="px-5 mt-5 w-full">
-      <div class="grid grid-cols-7 gap-7">
-        <p class="px-4 text-lg" v-for="(item, index) in days" :key="index">
+    <div class="xl:px-5 mt-5 w-full">
+      <div class="grid grid-cols-7 xl:gap-7 gap-4">
+        <p class="xl:px-4 text-lg" v-for="(item, index) in days" :key="index">
           {{ item.name }}
         </p>
       </div>
