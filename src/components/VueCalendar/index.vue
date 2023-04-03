@@ -98,7 +98,7 @@ storeToRefs(store);
         :month="store.countMonth"
           :currentDay="currentDay"
           :dayNumber="item"
-          class="cursor-pointer"
+          class="cursor-pointer hover:bg-slate-400"
           v-for="(item, index) in months[store.countMonth].count"
           :key="index"
           :value="item"
